@@ -1,4 +1,5 @@
 import sys
+print(sys.path)
 import types
 import pytest
 from unittest.mock import patch, MagicMock
