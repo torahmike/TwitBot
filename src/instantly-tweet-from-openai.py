@@ -13,4 +13,5 @@ def send_post():
     client.create_tweet(text=tweet_text)
     print("Tweet posted successfully")
 
-send_post()
+if __name__ == "__main__":
+    send_post()
