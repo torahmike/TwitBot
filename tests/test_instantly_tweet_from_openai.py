@@ -21,7 +21,7 @@ def patch_sys_modules(monkeypatch):
 def test_send_post_print_and_tweet(capsys):
     # Import the module fresh to pick up our mocks
     import importlib
-    import src.instantly_tweet_from_openai as module
+    import instantly_tweet_from_openai as module
     importlib.reload(module)
 
     # Patch client.create_tweet to track calls
