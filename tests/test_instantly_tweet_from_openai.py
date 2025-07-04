@@ -1,8 +1,9 @@
 import sys
-print(sys.path)
 import types
 import pytest
 from unittest.mock import patch, MagicMock
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
 
 @pytest.fixture(autouse=True)
 def patch_sys_modules(monkeypatch):
